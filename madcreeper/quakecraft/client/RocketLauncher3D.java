@@ -45,7 +45,7 @@ public class RocketLauncher3D implements IItemRenderer {
 				GL11.glRotatef(0, 0F, 0F, 1F);
 				GL11.glRotatef(0, 0F, 1F, 0F);
 				GL11.glTranslatef(0F, 0F, 0F);
-				Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("/assets/madcreeper/textures/items/rocketlauncher.png"));
+				Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("madcreeper","/textures/items/rocketlauncher.png"));
 				modelRocketLauncher.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0925F);
 				GL11.glPopMatrix();
 			}
@@ -54,7 +54,7 @@ public class RocketLauncher3D implements IItemRenderer {
 				GL11.glRotatef(0, 0F, 0F, 1F);
 				GL11.glRotatef(0, 0F, 1F, 0F);
 				GL11.glTranslatef(0F, 0F, 0F);
-				Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("/assets/madcreeper/textures/items/rocketlauncher.png"));
+				Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("madcreeper","/textures/items/rocketlauncher.png"));
 				modelRocketLauncher.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0925F);
 				GL11.glPopMatrix();
 			}
@@ -63,7 +63,7 @@ public class RocketLauncher3D implements IItemRenderer {
 				GL11.glRotatef(0, 0F, 0F, 1F);
 				GL11.glRotatef(0, 0F, 1F, 0F);
 				GL11.glTranslatef(0F, 0F, 0F);
-				Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("/assets/madcreeper/textures/items/rocketlauncher.png"));
+				Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation("madcreeper","/textures/items/rocketlauncher.png"));
 				modelRocketLauncher.render((Entity)data[1], 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0925F);
 				GL11.glPopMatrix();
 			}

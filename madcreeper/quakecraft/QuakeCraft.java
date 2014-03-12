@@ -22,7 +22,7 @@ public class QuakeCraft {
 	
 	
 	// The instance of your mod that Forge uses.
-    @Instance(value = "MadModID")
+    @Instance(value = "QuakeCraftID")
     public static QuakeCraft instance;
     public static Item itemHammer;
     public static Item itemRocketLauncher;
