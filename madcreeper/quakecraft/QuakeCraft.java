@@ -1,6 +1,7 @@
 package madcreeper.quakecraft;
 
 import madcreeper.quakecraft.client.Hammer3D;
+import madcreeper.quakecraft.client.RocketLauncher3D;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.IItemRenderer;
@@ -24,6 +25,7 @@ public class QuakeCraft {
     @Instance(value = "MadModID")
     public static QuakeCraft instance;
     public static Item itemHammer;
+    public static Item itemRocketLauncher;
 
     
   
@@ -35,18 +37,21 @@ public class QuakeCraft {
     public void modInit(FMLInitializationEvent event) {
     	
 	MinecraftForgeClient.registerItemRenderer(madcreeper.quakecraft.QuakeCraft.itemHammer.itemID , (IItemRenderer)new Hammer3D());
-
+	MinecraftForgeClient.registerItemRenderer(madcreeper.quakecraft.QuakeCraft.itemRocketLauncher.itemID , (IItemRenderer)new RocketLauncher3D());
+	
     }
         
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	itemHammer = new TestItem(5000, 1, CreativeTabs.tabCombat, "itemHammer", "testWeapon").setFull3D().setMaxDamage(200);
-    	
+    	itemRocketLauncher = new TestItem(5001, 1, CreativeTabs.tabCombat, "itemRocketLaucner", "rocketLauncher").setFull3D().setMaxDamage(200);
     }
         
     @EventHandler
     public void load(FMLInitializationEvent event) {
     	LanguageRegistry.addName(itemHammer, "MadWeapon");
+    	LanguageRegistry.addName(itemRocketLauncher, "Rocket Launcher");
+    	
     }
         
     @EventHandler

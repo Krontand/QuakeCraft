@@ -1,6 +1,7 @@
 package madcreeper.quakecraft.client;
 
 import madcreeper.quakecraft.model.HammerModel;
+import madcreeper.quakecraft.model.modelRocketLauncher;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
