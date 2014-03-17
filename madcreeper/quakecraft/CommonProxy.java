@@ -6,8 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 public class CommonProxy {
 
     public void initMod() {
-    	
-   	
+      	
     }
 	
 	// Client stuff
