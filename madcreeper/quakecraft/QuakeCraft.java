@@ -3,14 +3,9 @@ package madcreeper.quakecraft;
 import madcreeper.quakecraft.client.Hammer3D;
 import madcreeper.quakecraft.client.PlasmaGun3D;
 import madcreeper.quakecraft.client.RocketLauncher3D;
-import madcreeper.quakecraft.render.QCModelPlayerBase;
-import madcreeper.quakecraft.render.QCRenderPlayerBase;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
-import api.player.model.ModelPlayerAPI;
-import api.player.render.RenderPlayerAPI;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -35,8 +30,7 @@ public class QuakeCraft {
     public static CommonProxy proxy;
         
     public void ModsLoaded() {
-    	RenderPlayerAPI.register("MyModId", QCRenderPlayerBase.class);
-    	ModelPlayerAPI.register("MyModId", QCModelPlayerBase.class);
+
     }
     
     @EventHandler
@@ -59,7 +53,7 @@ public class QuakeCraft {
     public void load(FMLInitializationEvent event) {
     	LanguageRegistry.addName(itemHammer, "MadWeapon");
     	LanguageRegistry.addName(itemRocketLauncher, "Rocket Launcher");
-    	LanguageRegistry.addName(itemPlasmaGun, "Plasma Gun");
+    	LanguageRegistry.addName(itemPlasmaGun, "Plasmagun");
     	
     }
         
