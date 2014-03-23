@@ -45,8 +45,8 @@ public class QuakeCraft {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	itemHammer = new QWeapon(5000, "itemHammer", "testWeapon").setFull3D().setMaxDamage(200);
-    	itemRocketLauncher = new QWeapon(5001, "rocketLauncher", "RocketLauncher").setFull3D();
-    	itemPlasmaGun = new QWeapon(5002, "plasmaGun", "PlasmaGun").setFull3D();
+    	itemRocketLauncher = new QWeapon(5001, "itemRocketLauncher", "RocketLauncher").setFull3D();
+    	itemPlasmaGun = new QWeapon(5002, "itemPlasmaGun", "PlasmaGun").setFull3D();
     }
         
     @EventHandler
