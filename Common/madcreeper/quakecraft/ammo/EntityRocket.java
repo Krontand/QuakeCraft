@@ -28,8 +28,8 @@ public class EntityRocket extends EntityThrowable
 	@Override
 	protected void onImpact(MovingObjectPosition var1) 
 	{
-		this.worldObj.newExplosion(this, var1.blockX, var1.blockY, var1.blockZ, 4.0F, true, true);
-		this.setDead(); 
+		this.worldObj.newExplosion(this, this.posX, this.posY, this.posZ, 4.0F, false, true);
+		this.setDead();
 	}
 
 	

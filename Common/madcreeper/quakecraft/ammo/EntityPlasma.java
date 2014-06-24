@@ -33,7 +33,7 @@ public class EntityPlasma extends EntityThrowable
 	@Override
 	protected void onImpact(MovingObjectPosition var1) 
 	{
-		this.worldObj.newExplosion(this, this.posX, this.posY, this.posZ, 0.5F, false, true);
+		this.worldObj.newExplosion(this, this.posX, this.posY, this.posZ, 1.0F, false, true);
 		this.setDead();
 	}
 

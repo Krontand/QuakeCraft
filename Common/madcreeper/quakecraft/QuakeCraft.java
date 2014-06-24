@@ -7,6 +7,7 @@ import madcreeper.quakecraft.client.PlasmaGun3D;
 import madcreeper.quakecraft.client.RocketLauncher3D;
 import madcreeper.quakecraft.weapon.PlasmaGun;
 import madcreeper.quakecraft.weapon.RocketLauncher;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
@@ -19,7 +20,8 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 @Mod(modid="QuakeCraftID", name="QuakeCraft from MadCreeper", version="0.1 aplha")
 public class QuakeCraft 
@@ -30,6 +32,13 @@ public class QuakeCraft
     public static Item itemHammer;
     public static Item itemRocketLauncher;
     public static Item itemPlasmaGun;
+    public static CreativeTabs tabQCraft = new CreativeTabs("tabQCraft") {
+        @Override
+        @SideOnly(Side.CLIENT)
+        public Item getTabIconItem() {
+            return itemRocketLauncher;
+        }
+    };
     
     @SidedProxy(clientSide="madcreeper.quakecraft.client.ClientProxy", serverSide="madcreeper.quakecraft.CommonProxy")
     public static CommonProxy proxy;

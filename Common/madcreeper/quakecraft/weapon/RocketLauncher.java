@@ -1,23 +1,18 @@
 package madcreeper.quakecraft.weapon;
 
+import madcreeper.quakecraft.QWeapon;
 import madcreeper.quakecraft.ammo.EntityRocket;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class RocketLauncher	extends Item 
+public class RocketLauncher	extends QWeapon 
 {
 
 	public RocketLauncher(String texture) 
 	{
-		setMaxStackSize(1);
-		setFull3D();
-		setMaxStackSize(maxStackSize);
-		setCreativeTab(CreativeTabs.tabCombat);
-		setTextureName("madcreeper:" + texture);
+		super(texture);
 	}
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer) 
 	{
