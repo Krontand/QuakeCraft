@@ -32,6 +32,7 @@ public class QuakeCraft
     public static Item itemHammer;
     public static Item itemRocketLauncher;
     public static Item itemPlasmaGun;
+    
     public static CreativeTabs tabQCraft = new CreativeTabs("tabQCraft") {
         @Override
         @SideOnly(Side.CLIENT)
@@ -67,14 +68,8 @@ public class QuakeCraft
     }
         
     @EventHandler
-    public void load(FMLInitializationEvent event) 
-    {
-
-    }
+    public void load(FMLInitializationEvent event) {}
         
     @EventHandler
-    public void postInit(FMLPostInitializationEvent event) 
-    {
-    	// Stub Method
-    }
+    public void postInit(FMLPostInitializationEvent event) {}
 }

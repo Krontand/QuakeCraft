@@ -12,6 +12,7 @@ public class QWeapon extends Item
 		setMaxStackSize(maxStackSize);
         setCreativeTab(QuakeCraft.tabQCraft);
         setTextureName("madcreeper:" + texture);
+        setUnlocalizedName(texture);
 	}
 
 }
